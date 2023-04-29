@@ -1,0 +1,14 @@
+<div class="container">
+  <app-comp-a
+    *ngFor="let p of posts; let indx = index"
+    [myPost]="p"
+  ></app-comp-a>
+  <input
+    type="text"
+    #inputText
+  />
+  <button (click)="onFocus()">Focus</button>
+  <p appStyles>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, rerum.</p>
+
+
+</div>
